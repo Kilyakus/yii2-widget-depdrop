@@ -1,12 +1,4 @@
 <?php
-
-/**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2019
- * @package yii2-widgets
- * @subpackage yii2-widget-depdrop
- * @version 1.0.6
- */
-
 namespace kartik\depdrop;
 
 use kilyakus\widgets\InputWidget;
@@ -15,53 +7,15 @@ use kilyakus\select2\Select2;
 use yii\helpers\ArrayHelper;
 use yii\base\InvalidConfigException;
 
-/**
- * Dependent Dropdown widget is a wrapper widget for the dependent-dropdown
- * JQuery plugin by Krajee. The plugin enables setting up dependent dropdowns
- * with nested dependencies.
- *
- * @see http://demos.krajee.com/widget-details/depdrop
- * @see http://plugins.krajee.com/dependent-dropdown
- * @see http://github.com/kartik-v/dependent-dropdown
- * @author Kartik Visweswaran <kartikv2@gmail.com>
- * @since 1.0.6
- */
 class DepDrop extends InputWidget
 {
-    /**
-     * @var string the default native select input dropdown style
-     */
     const TYPE_DEFAULT = 1;
-    
-    /**
-     * @var string the enhanced Select2 widget dropdown style
-     */
     const TYPE_SELECT2 = 2;
 
-    /**
-     * @var int the type of the dropdown element. Defaults to `1`. Can be one of the following:
-     *
-     * - 1 or [[DepDrop::TYPE_DEFAULT]] will render using \yii\helpers\Html::dropDownList
-     * - 2 or [[DepDrop::TYPE_SELECT2]] will render using \kartik\widgets\Select2 widget
-     */
     public $type = self::TYPE_DEFAULT;
-
-    /**
-     * @var array the configuration options for the Select2 widget. Applicable only if the `type` property is set to
-     *     [[DepDrop::TYPE_SELECT2]].
-     */
     public $select2Options = [];
-
-    /**
-     * @inheritdoc
-     */
     public $pluginName = 'depdrop';
 
-    /**
-     * Runs the widget
-     *
-     * @throws InvalidConfigException
-     */
     public function run()
     {
         if (empty($this->pluginOptions['url'])) {
@@ -82,9 +36,6 @@ class DepDrop extends InputWidget
         $this->registerAssets();
     }
 
-    /**
-     * Registers the needed assets
-     */
     public function registerAssets()
     {
         $view = $this->getView();
