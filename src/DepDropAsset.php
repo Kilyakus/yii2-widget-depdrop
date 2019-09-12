@@ -7,7 +7,7 @@
  * @version 1.0.6
  */
 
-namespace kartik\depdrop;
+namespace kilyakus\depdrop;
 
 use kilyakus\widgets\AssetBundle;
 

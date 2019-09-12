@@ -1,5 +1,5 @@
 <?php
-namespace kartik\depdrop;
+namespace kilyakus\depdrop;
 
 use kilyakus\widgets\InputWidget;
 use kilyakus\widgets\Config;

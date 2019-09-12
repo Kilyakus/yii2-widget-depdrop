@@ -7,7 +7,7 @@
  * @version 1.0.6
  */
 
-namespace kartik\depdrop;
+namespace kilyakus\depdrop;
 
 use Yii;
 use Closure;
@@ -26,7 +26,7 @@ use yii\web\Response;
  *    {
  *        return \yii\helpers\ArrayHelper::merge(parent::actions(), [
  *            'subcategory' => [
- *                'class' => \kartik\depdrop\DepDropAction::className(),
+ *                'class' => \kilyakus\depdrop\DepDropAction::className(),
  *                'outputCallback' => function ($selectedId, $params) {
  *                    return [
  *                        [
