@@ -1,0 +1,31 @@
+{
+    "name": "kilyakus/yii2-widget-depdrop",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kartik Visweswaran",
+            "email": "kartikv2@gmail.com",
+            "homepage": "http://www.krajee.com/"
+        },
+        {
+            "name": "Edited: Kilyakus",
+            "email": "aleksandr.kilyakov@gmail.com"
+        }
+    ],
+    "require": {
+        "kilyakus/yii2-widget-base": "*",
+        "kilyakus/yii2-widget-select2": "*",
+        "kartik-v/dependent-dropdown": "~1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "kilyakus\\depdrop\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
